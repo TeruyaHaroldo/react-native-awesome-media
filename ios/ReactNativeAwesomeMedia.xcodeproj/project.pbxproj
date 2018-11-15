@@ -6,10 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		B3E7B58A1CC2AC0600A0062D /* ReactNativeAwesomeMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* ReactNativeAwesomeMedia.m */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -24,8 +20,19 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libReactNativeAwesomeMedia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativeAwesomeMedia.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* ReactNativeAwesomeMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeAwesomeMedia.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* ReactNativeAwesomeMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeAwesomeMedia.m; sourceTree = "<group>"; };
+		5C67A65F219DCE21004B93EE /* CallManagerModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManagerModule.swift; sourceTree = "<group>"; };
+		5C67A660219DCE21004B93EE /* CallManagerBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallManagerBridge.m; sourceTree = "<group>"; };
+		5C67A662219DCE21004B93EE /* AudioManagerBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioManagerBridge.m; sourceTree = "<group>"; };
+		5C67A663219DCE21004B93EE /* AudioManagerModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManagerModule.swift; sourceTree = "<group>"; };
+		5C67A665219DCE21004B93EE /* DeviceManagerBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceManagerBridge.m; sourceTree = "<group>"; };
+		5C67A666219DCE21004B93EE /* DeviceManagerModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManagerModule.swift; sourceTree = "<group>"; };
+		5C67A66E219DCE21004B93EE /* DirectoryManagerBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirectoryManagerBridge.m; sourceTree = "<group>"; };
+		5C67A66F219DCE21004B93EE /* DirectoryManagerModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryManagerModule.swift; sourceTree = "<group>"; };
+		5C67A671219DCE21004B93EE /* AppStateNativeManagerBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppStateNativeManagerBridge.m; sourceTree = "<group>"; };
+		5C67A672219DCE21004B93EE /* AppStateNativeManagerModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateNativeManagerModule.swift; sourceTree = "<group>"; };
+		5C67A674219DCE21004B93EE /* RecorderManagerModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderManagerModule.swift; sourceTree = "<group>"; };
+		5C67A675219DCE21004B93EE /* RecorderManagerBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecorderManagerBridge.m; sourceTree = "<group>"; };
+		5C67A676219DCFD7004B93EE /* ReactNativeAwesomeMedia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativeAwesomeMedia-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,10 +57,69 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5881CC2AC0600A0062D /* ReactNativeAwesomeMedia.h */,
-				B3E7B5891CC2AC0600A0062D /* ReactNativeAwesomeMedia.m */,
+				5C67A676219DCFD7004B93EE /* ReactNativeAwesomeMedia-Bridging-Header.h */,
+				5C67A670219DCE21004B93EE /* AppStateNativeManager */,
+				5C67A661219DCE21004B93EE /* AudioManager */,
+				5C67A65E219DCE21004B93EE /* CallManager */,
+				5C67A664219DCE21004B93EE /* DeviceManager */,
+				5C67A66D219DCE21004B93EE /* DirectoryManager */,
+				5C67A673219DCE21004B93EE /* RecorderManager */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		5C67A65E219DCE21004B93EE /* CallManager */ = {
+			isa = PBXGroup;
+			children = (
+				5C67A65F219DCE21004B93EE /* CallManagerModule.swift */,
+				5C67A660219DCE21004B93EE /* CallManagerBridge.m */,
+			);
+			path = CallManager;
+			sourceTree = "<group>";
+		};
+		5C67A661219DCE21004B93EE /* AudioManager */ = {
+			isa = PBXGroup;
+			children = (
+				5C67A662219DCE21004B93EE /* AudioManagerBridge.m */,
+				5C67A663219DCE21004B93EE /* AudioManagerModule.swift */,
+			);
+			path = AudioManager;
+			sourceTree = "<group>";
+		};
+		5C67A664219DCE21004B93EE /* DeviceManager */ = {
+			isa = PBXGroup;
+			children = (
+				5C67A665219DCE21004B93EE /* DeviceManagerBridge.m */,
+				5C67A666219DCE21004B93EE /* DeviceManagerModule.swift */,
+			);
+			path = DeviceManager;
+			sourceTree = "<group>";
+		};
+		5C67A66D219DCE21004B93EE /* DirectoryManager */ = {
+			isa = PBXGroup;
+			children = (
+				5C67A66E219DCE21004B93EE /* DirectoryManagerBridge.m */,
+				5C67A66F219DCE21004B93EE /* DirectoryManagerModule.swift */,
+			);
+			path = DirectoryManager;
+			sourceTree = "<group>";
+		};
+		5C67A670219DCE21004B93EE /* AppStateNativeManager */ = {
+			isa = PBXGroup;
+			children = (
+				5C67A671219DCE21004B93EE /* AppStateNativeManagerBridge.m */,
+				5C67A672219DCE21004B93EE /* AppStateNativeManagerModule.swift */,
+			);
+			path = AppStateNativeManager;
+			sourceTree = "<group>";
+		};
+		5C67A673219DCE21004B93EE /* RecorderManager */ = {
+			isa = PBXGroup;
+			children = (
+				5C67A674219DCE21004B93EE /* RecorderManagerModule.swift */,
+				5C67A675219DCE21004B93EE /* RecorderManagerBridge.m */,
+			);
+			path = RecorderManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +153,7 @@
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -112,7 +179,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* ReactNativeAwesomeMedia.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,32 +269,41 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = ReactNativeAwesomeMedia;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		58B511F11A9E6C8500147676 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ReactNativeAwesomeMedia;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeAwesomeMedia-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		58B511F11A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ReactNativeAwesomeMedia;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeAwesomeMedia-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
