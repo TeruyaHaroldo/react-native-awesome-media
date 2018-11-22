@@ -11,6 +11,10 @@
   ],
   "author": "FalaFreud Inc.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TeruyaHaroldo/react-native-asyncstorage-queue.git"
+  },
   "peerDependencies": {
     "react-native": "^0.51.0"
   }
